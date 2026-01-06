@@ -4,11 +4,490 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>New Maximum Potency Formula - Lymphatic Drainage Capsules by Sculptiqu
+        – Sculptique
+    </title>
+    <link rel="icon" href="./assets/images/favicon.png" type="image/png">
+
+    <!-- FONTS  -->
+    <link href="https://fonts.cdnfonts.com/css/lora" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/nunito" rel="stylesheet">
+    <!-- END FONTS -->
+
+    <!-- SLICK CAROUSEL -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- END SLICK CAROUSEl -->
 </head>
+<!-- BOILERPLATE STYLESHEET -->
+<style>
+    :root {
+
+        --font-heading-family: Trirong, serif;
+        --font-body-family: Montserrat, sans-serif;
+        --font-body-weight: 400;
+    }
+
+    div {
+        display: block;
+        unicode-bidi: isolate;
+    }
+
+    body {
+        font-size: 1.5rem;
+        font-family: var(--font-body-family);
+        font-weight: var(--font-body-weight);
+        letter-spacing: 0.06rem;
+    }
+
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+
+    .content-section p {
+        font-family: Nunito;
+    }
+
+    .page-width {
+        max-width: 1340px !important
+    }
+
+    .page-width {
+        margin: 0 auto;
+        padding: 0 1.5rem
+    }
+
+    .image-box img {
+        object-fit: cover;
+        aspect-ratio: 1;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .product-box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .products-images img {
+        object-fit: cover;
+        aspect-ratio: 1;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .slick-slide {
+        display: block;
+    }
+
+    .product-title {
+        font-size: 28px;
+        margin: 16px 0;
+        line-height: 1.4em;
+        font-family: Lora;
+        font-weight: 400;
+    }
+
+    .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 16px 0;
+    }
+
+    .feature-item>div:nth-child(1) {
+        width: 10%;
+        display: flex;
+        align-items: center;
+    }
+</style>
+<!-- END BOILERPLATE STYLESHEET -->
+
+<!-- MEDIA  -->
+<style>
+    .products-preview img {
+        width: 100px;
+    }
+
+    .products-container>div {
+        min-width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .mobile-only {
+        display: none !important;
+    }
+
+    @media only screen and (max-width: 678px) {
+        .mobile-only {
+            display: block !important;
+        }
+
+        .desktop-only {
+            display: none !important;
+        }
+
+        .content-section {
+            overflow-x: hidden
+        }
+
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+
+        .slick-next {
+            right: 24px;
+            z-index: 2;
+            width: 32px;
+            height: 32px;
+        }
+
+        .slick-next::before {
+            content: none
+        }
+
+        .slick-prev {
+            left: 24px;
+            z-index: 2;
+            width: 32px;
+            height: 32px;
+        }
+
+        .slick-prev::before {
+            content: none
+        }
+
+        .products-images-thumbs .slick-slide {
+            padding: 0 4px
+        }
+
+        .products-images-thumbs>.slick-slide {
+            max-width: 154px;
+            scroll-snap-type: x mandatory;
+            scroll-snap-align: center;
+        }
+
+        .products-preview img {
+            width: 60px;
+        }
+
+        .product-title {
+            font-size: 24px;
+        }
+
+    }
+
+    @media (min-width: 679px) {
+        .products-preview p {
+            font-size: 16px !important;
+        }
+    }
+</style>
+<!-- END MEDIA -->
 
 <body>
+    <!-- HEADER -->
+    <div class="p-3 text-center">
+        <img class="m-auto max-w-40" src="./assets/images/logo.png" alt="">
+    </div>
+    <!-- END HEADER -->
 
+    <!-- CONTENTS -->
+    <main>
+        <section class="content-section">
+            <div class="outer-container py-8 [&_img]:w-full">
+                <div class="page-width">
+                    <div class="container flex! gap-16">
+                        <!-- [LEFT] PRODUCTS -->
+                        <div>
+                            <!-- DESKTOP -->
+                            <div class="desktop-only products-images">
+                                <!-- 1ST  -->
+                                <div class="relative flex! justify-center!">
+                                    <!-- MAIN -->
+                                    <img src="./assets/images/LymphaticDrainage.png" loading="eager" alt="">
+                                    <!-- END MAIN -->
+
+                                    <!-- NUTRITIONAL INFO -->
+                                    <div
+                                        class="absolute! bottom-8 z-2 flex! justify-center gap-2 leading-[1.2] max-w-[290px] py-2 px-6 bg-[#ffffffd9] border border-black rounded-[24px] cursor-pointer text-[14px]">
+                                        <span>
+                                            <img class="w-6!" src="./assets/images/leafs.png" alt="">
+                                        </span>
+                                        <span class="flex items-center">Nutritional Information</span>
+                                    </div>
+                                    <!-- END NUTRITIONAL INFO -->
+
+                                    <!-- SALE TAG -->
+                                    <img class="absolute right-4 top-4 max-w-[120px] block"
+                                        src="./assets/images/new-year-sale-tag.png" alt="">
+                                    <!-- END SALE TAG -->
+                                </div>
+                                <!-- END 1ST -->
+                            </div>
+                            <!-- END DESKTOP -->
+
+                            <!-- MOBILE -->
+                            <div class="mobile-only products-images">
+                                <!-- RPODUCTS CAROUSEL -->
+                                <div class="products-carousel">
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/low-stock-limitedBatchAvailable.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/LymphaticDrainage.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/ItStopWorking_Product2ND.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/WhyThiShappendAfter35_Product2ND.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/AllConnectedToTheSameRootCause_Product3RD.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/WhyNothingHasWorkedUntilNow_Product3RD.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/Risk-FreeFor60Days_Product3RD.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/AddressessAll8Mechanism.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/WhatToExpectWeekByWeek.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/93000Women.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/1000sOfScientsPapers.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/QualityYouCanTrust.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/WhoSayItWorks.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END PRODUCTS CAROUSEL -->
+
+                                <!-- THUMBS CAROUSEL -->
+                                <div class="products-images-thumbs">
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/low-stock-limitedBatchAvailable.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/LymphaticDrainage.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/ItStopWorking_Product2ND.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/WhyThiShappendAfter35_Product2ND.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/AllConnectedToTheSameRootCause_Product3RD.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/WhyNothingHasWorkedUntilNow_Product3RD.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/Risk-FreeFor60Days_Product3RD.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/AddressessAll8Mechanism.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/WhatToExpectWeekByWeek.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/93000Women.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/1000sOfScientsPapers.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/QualityYouCanTrust.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="product-box">
+                                            <img src="./assets/images/WhoSayItWorks.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END THUMBS CAROUSEL -->
+                            </div>
+                            <!-- END MOBILE -->
+                        </div>
+                        <!-- END [LEFT] PRODUCTS -->
+
+                        <!-- [RIGHT] PRODUCT INFORMATIONS -->
+                        <div class="">
+                            <!-- PRODUCT PREVIEWS -->
+                            <div
+                                class="products-preview p-0! flex! gap-4 items-center mb-4 [&_div]:w-fit [&_div]:inline-block!">
+                                <!-- PREVIEW STARS -->
+                                <div>
+                                    <img src="./assets/images/product_preview.png" alt="">
+                                </div>
+                                <!-- END PREVIEW STARS -->
+
+                                <!-- DESCRIPTIONS -->
+                                <div>
+                                    <p class="text-xs text-nowrap!">4.8/5 Excellent | Based on 2381 Reviews</p>
+                                </div>
+                                <!-- END DESCRIPTIONS -->
+                            </div>
+                            <!-- END PRODUCT PREVIEWS -->
+
+                            <!-- PRODUCT TITLE -->
+                            <h1 class="product-title">New Maximum Potency Formula - Lymphatic Drainage Capsules by
+                                Sculptique™</h1>
+                            <!-- END PRODUCT TITLE -->
+
+                            <!-- PRODUCT FEATURES -->
+                            <div class="product-features">
+                            </div>
+                            <!-- END PRODUCT FEATURES -->
+
+                            <script async="" type="text/javascript"
+                                src="https://app.thefrontrowhealth.com/api/widgets/script?presentation_type=sticker&amp;product_id=2691"></script>
+                            <iframe data-state="max" class="iframe-frontrow-sticker" id="frontrow-sticker"
+                                frameborder="0"
+                                src="https://app.thefrontrowhealth.com/api/widgets?presentation_type=sticker&amp;product_id=2691"
+                                style="transform: scale(0.904119); transform-origin: 0px -9.5881%;"></iframe>
+                            <style>
+                                .iframe.frontrow {
+                                    display: none;
+                                    position: fixed;
+                                    left: 0;
+                                    top: 0;
+                                    z-index: 99999997;
+                                    right: 0;
+                                    bottom: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    overflow: hidden
+                                }
+                            </style>
+                        </div>
+                        <!-- END [RIGHT] PRODUCT INFORMATIONS -->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <!-- END CONTENTS -->
 </body>
+
+<script src="./index.js"></script>
+
+<script>
+    $(document).ready(() => {
+        $('.products-carousel').slick({
+            slidesToShow: 1,
+            arrows: true,
+            infinite: true,
+            draggable: true,
+            infinite: true,
+            adaptiveHeight: true,
+            nextArrow: `
+            <button class="slick-next slick-arrow">
+                <img src="./assets/images/LeftArrow.png" style="rotate: 180deg" alt="Next Arrow">
+            </button>`,
+            prevArrow: `
+            <button class="slick-prev slick-arrow">
+                <img src="./assets/images/LeftArrow.png" alt="Previous Arrow">
+            </button>`,
+            asNavFor: '.products-images-thumbs',
+        });
+
+        $('.products-images-thumbs').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            focusOnSelect: true,
+            infinite: true,
+            asNavFor: '.products-carousel',
+        });
+
+    })
+</script>
 
 </html>
