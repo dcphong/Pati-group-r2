@@ -206,6 +206,105 @@ const bloatingCardsData = [
   },
 ];
 
+const whyNothingBloatingCardsData = [
+  {
+    src: "https://trysculptique.com/cdn/shop/files/X1.jpg?v=1760943360",
+    title: "You cut out gluten, dairy, sugar. You ate clean for months.",
+    reason:
+      "Your diet only addressed what goes IN. It didn't fix your body's broken ability to drain what's already there.",
+  },
+  {
+    src: "https://trysculptique.com/cdn/shop/files/X2.jpg?v=1760943359",
+    title: "You tried viral lymphatic drops from TikTok.",
+    reason:
+      "They’re just pricey water with trace herbs. The “active ingredients” are destroyed by stomach acid, and even if absorbed, only act as a mild diuretic. No vessel repair, no protein breakdown—just expensive urine.",
+  },
+  {
+    src: "https://trysculptique.com/cdn/shop/files/X3.jpg?v=1760943359",
+    title: "You got lymphatic massage or bought compression socks.",
+    reason:
+      "Temporary manual movement. Within 24-48 hours, everything backed up again because your vessels still can't pump on their own.",
+  },
+];
+
+const ingredientTableData = [
+  {
+    title: "Reactivate Lymphatic Pumps",
+    img: "https://trysculptique.com/cdn/shop/files/Frame_1484580382.png?v=1760698909",
+    thumb: "Cleavers Extract (100mg)",
+    contents: [
+      'Restores rhythmic vessel contractions that move lymph through your system. Contains iridoids that "wake up" muscle cells in vessel walls. 2024 study showed enhanced immune cell activity for better waste clearance.',
+      "[Study: Enhanced NK cell activity in immunosuppressed models]",
+    ],
+  },
+  {
+    title: "Flush Excess Fluid",
+    img: "//trysculptique.com/cdn/shop/files/Frame_1484580382_1.png?v=1760939908",
+    thumb: "Dandelion Extract (250mg)",
+    contents: [
+      "Proven gentle diuretic that increases fluid excretion without harsh side effects. Human trial showed statistically significant increase in urination frequency (p<0.05) and excretion ratio (p<0.001). ",
+      "[Study: First human pilot study on diuretic effects]",
+    ],
+  },
+  {
+    title: "Break Down Protein Clogs",
+    img: "https://trysculptique.com/cdn/shop/files/image_2.png?v=1760939909",
+    thumb: "Bromelain Powder (100mg)",
+    contents: [
+      'Proteolytic enzyme that clears blockages preventing drainage. Breaks down fibrin proteins creating "sludge" in vessels. 2024 RCT showed significantly greater reductions in swelling than placebo.',
+      "[Study: As effective as prescription NSAIDs for inflammation]",
+    ],
+  },
+  {
+    title: "Strengthen Vessel Walls",
+    img: "//trysculptique.com/cdn/shop/files/image_3.png?v=1760939909",
+    thumb: "Rutin (100mg)",
+    contents: [
+      "Reduces vessel permeability so fluid doesn't leak back into tissues. Clinical trials showed average 4.2 cm reduction in limb circumference over 6 months in lymphedema patients. ",
+      "[Study: Systematic review of 1,643 participants]",
+    ],
+  },
+  {
+    title: "Reduce Inflammation",
+    img: "//trysculptique.com/cdn/shop/files/Frame_1484580382_2.png?v=1760939909",
+    thumb: "Burdock Root Powder (200mg)",
+    contents: [
+      " Breaks the inflammation-congestion cycle. RCT showed significantly decreased inflammatory markers IL-6 and C-reactive protein (p<0.001). Also supports hormonal balance. ",
+      "[Study: 42-day trial in osteoarthritis patients]",
+    ],
+  },
+  {
+    title: "Boost Immune Clearance",
+    img: "//trysculptique.com/cdn/shop/files/image_4.png?v=1760939909",
+    thumb: "Echinacea Purpurea Extract (500mg)",
+    contents: [
+      "Enhances lymphocyte activity for better waste removal. Meta-analysis of 30 trials with 5,600+ participants showed 40% reduction in recurrent infections. ",
+      "[Study: Increased NK cell cytotoxic activity]",
+    ],
+  },
+  {
+    title: "Support Metabolism",
+    img: "//trysculptique.com/cdn/shop/files/Frame_1484580382_3.png?v=1760939909",
+    thumb: "Kelp Extract (30mg)",
+    contents: [
+      "Provides iodine for thyroid function and healthy metabolic rate. Sluggish thyroid = sluggish lymphatic drainage. Contains fucoxanthin shown to reduce body fat in human trials. ",
+      "[Study: Dose-dependent increase in TSH levels]",
+    ],
+  },
+  {
+    title: "Antioxidant Protection",
+    img: "//trysculptique.com/cdn/shop/files/Frame_1484580382_4.png?v=1760939910",
+    thumb: "Lemon Powder (50mg)",
+    contents: [
+      "Protects vessels from oxidative damage. RCT showed 145% improvement in vascular function (p<0.001). Supports circulation and metabolic health. ",
+      "[Study: Triple-masked trial in 90 participants]",
+    ],
+  },
+];
+
+const xIcon =
+  "https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Vector_6.png?v=1760696853";
+
 $(document).ready(function () {
   const productsCarouselMain = $(".products-carousel");
   const productsCarouselThumbs = $(".products-images-thumbs");
@@ -221,6 +320,8 @@ $(document).ready(function () {
 </svg>
   `;
   const bloatingGridCardsContainer = $(".bloating-grid-cards-container");
+  const whyNothingBloatingGridContainer = $(".why-not-grid-container");
+  const ingredientTableContainer = $(".ingredient-table-container");
 
   productsImages.forEach((image) => {
     const carouselItem = $(`
@@ -418,7 +519,7 @@ $(document).ready(function () {
 
   const slideBlocks = $(".slide-block");
 
-  slideBlocks.each((index, element) => {
+  slideBlocks.each((_, element) => {
     $(element).on("click", (e) => {
       e.currentTarget.classList.toggle("active");
 
@@ -429,7 +530,7 @@ $(document).ready(function () {
   });
 
   // BLOATING GRID CARDS
-  bloatingCardsData.forEach((card, index) => {
+  bloatingCardsData.forEach((card, _) => {
     const cardItem = `
       <div class="bloating-block rounded-[6px] overflow-hidden w-full">
         <div class="min-h-[150px] non-overflow-hidden">
@@ -447,5 +548,115 @@ $(document).ready(function () {
     `;
 
     bloatingGridCardsContainer.append(cardItem);
+  });
+
+  whyNothingBloatingCardsData.forEach((card, _) => {
+    const cardItem = ` 
+      <div class="why-nothing-block rounded-[6px] overflow-hidden">
+        <div>
+          <img class="w-full block" src="${card.src}" alt="${card.title}" />
+        </div>
+        <div class="why-nothing-card-footer p-[24px] text-center bg-[#f7f7f7]">
+          <!-- TITLE -->
+          <h4 class="text-[20px]! leading-[1.3em]! m-0">
+            ${card.title}
+          </h4>
+          <!-- END TITLE -->
+
+          <!-- REASON -->
+          <div class="bg-[#ffe3e3] py-[8px] px-[16px] rounded-[6px] overflow-hidden mt-[24px] min-h-[180px]">
+            <!-- SUBTITLE -->
+            <p class="why-nothing-subtitle m-0 flex items-center gap-[6px] justify-center text-[16px] leadign-[1.3em] font-[600]">
+              <span>
+                Why it failed
+              </span>
+              <span>
+                <img loading="lazy" class="w-[24px]" src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Vector_6.png?v=1760696853">
+              </span>
+            </p>
+            <!-- END SUBTITLE -->
+
+            <!-- REASON CONTENT -->
+            <p class="why-nothing-reason text-[16px] leading-[1.3em] mt-[12px]">
+              ${card.reason}
+            </p> 
+            <!-- END REASON CONTENT -->
+          </div>
+          <!-- END REASON -->
+        </div>
+      </div>     
+    `;
+
+    whyNothingBloatingGridContainer.append(cardItem);
+  });
+
+  ingredientTableData.forEach((card) => {
+    const item = `
+      <div class="ingredient-block-item border-[0.5px] border-black p-[24px] cursor-pointer">
+        <!-- TITLE --> 
+        <p class="flex justify-center gap-[8px] items-center text-[16px] text-[#0c7c00] m-0">
+          <span>
+            <img class="w-full max-w-[16px] block" src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/check-mark_17013456_2.png?v=1760698419">
+          </span>
+          <span>${card.title}</span>
+        </p>
+        <!-- END TITLE --> 
+
+        <!-- IMAGE -->
+        <img class="desktop-only block max-w-[120px] my-[12px] mx-auto max-h-[80px] w-auto" src="${
+          card.img
+        }" alt="${card.title}"/>
+        <!-- END IMAGE -->
+
+        <!-- THUMB -->
+        <div class="ingredient-item-thumb flex items-center gap-[8px] justify-between">
+          <div class="mobile-only">
+            <img class="m-0 max-w-full block max-h-[80px] w-auto" src="${
+              card.img
+            }" alt="${card.img}"/>
+          </div> 
+
+          <!-- SLIDE TRIGGERED UI -->
+          <div>
+            <h5 class="text-[16px] font-[600]! text-start m-0 leading-[1.3em]">${
+              card.thumb
+            }</h5>
+          </div> 
+          <div>
+            <img class="w-full max-w-[24px] block ml-auto" src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/weui_arrow-outlined.png?v=1760698626">
+          </div>
+          <!-- END SLIDE TRIGGERED UI -->
+        </div>
+        <!-- END THUMB -->
+
+        <!-- SLIDE CONTENT -->
+        <div class="ingredient-content-slide-triggered hidden pt-[12px]">
+          ${card.contents
+            .map(
+              (content) => `
+            <p class="m-0 leading-[1.3em] text-[14px]">${content}</p>
+          `
+            )
+            .join("")}
+        </div>
+        <!-- END SLIDE CONTENT -->
+      </div>
+    `;
+
+    ingredientTableContainer.append(item);
+  });
+
+  const ingredientItemBlock = $(".ingredient-block-item");
+
+  ingredientItemBlock.each((_, element) => {
+    $(element).on("click", (e) => {
+      e.currentTarget.classList.toggle("active");
+
+      const ingredientContent = $(element).find(
+        ".ingredient-content-slide-triggered"
+      );
+
+      ingredientContent.slideToggle(350);
+    });
   });
 });

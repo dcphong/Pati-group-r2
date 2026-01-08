@@ -52,6 +52,13 @@
         unicode-bidi: isolate;
     } */
 
+    h4,
+    .h4 {
+        font-family: var(--font-heading-family);
+        font-style: var(--font-heading-style);
+        font-size: calc(var(--font-heading-scale) * 1.5rem);
+    }
+
     h1,
     h2,
     h3,
@@ -353,6 +360,50 @@
         .chart-footer {
             padding-bottom: 0;
             padding: 32px 0;
+        }
+
+        .why-not-grid-container {
+            display: grid;
+            gap: 8px;
+        }
+
+        .why-not-grid-container {
+            margin-bottom: 24px;
+        }
+
+        .product_primary-btn {
+            display: block !important;
+            padding: 16px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .ingredient-outer {
+            padding: 32px 0 !important;
+        }
+
+        .ingredient-table-container {
+            grid-template-columns: 1fr !important;
+        }
+
+        .ingredient-item-thumb>div:nth-child(1) {
+            width: 20%;
+        }
+
+        .ingredient-item-thumb>div:nth-child(2) {
+            width: 70%;
+        }
+
+        .ingredient-item-thumb>div:nth-child(3) {
+            width: 10%;
+        }
+
+        .ingredient-item-thumb h5 {
+            font-size: 14px;
+        }
+
+        .ingredient-block-item {
+            padding: 16px;
         }
     }
 
@@ -973,6 +1024,100 @@
             </div>
         </div>
         <!-- END CHART FOOTER -->
+
+        <!-- WHY NOTHING HAS WORKED -->
+        <div class="content-section">
+            <div
+                class="why-nothing-outer pt-0 text-[28px] font-[700] text-[#1c1b1b] mb-[35px] bg-[#f7f2e7] py-[70px] font-['Inter',sans-serif] text-center">
+                <div class="page-width">
+                    <!-- TITLE -->
+                    <div class="why-not-title-container max-w-[800px] m-auto">
+                        <h2
+                            class="text-center text-[32px] leading-[1.3em] my-[16px] mx-0 font-[400] font-[Lora] [&>span]:text-[#039869]!">
+                            Why Nothing Has
+                            <span>Worked</span>
+                        </h2>
+                    </div>
+                    <!-- END TITLE -->
+
+                    <!-- WHY NOT BLOATING GRID CARDS -->
+                    <div class="why-not-grid-container flex gap-[16px] mt-[40px] [&>div]:w-full">
+                    </div>
+                    <!-- END WHY NOT BLOATING GRID CARDS -->
+
+                    <!-- WHY NOT BLOATING IMAGE -->
+                    <div class="product_why-note-img [&>img]:max-w-[920px] [&>img]:w-full [&>img]:m-auto">
+                        <img class="desktop-only" loading="lazy"
+                            src="//trysculptique.com/cdn/shop/files/Group_7207_1.png?v=1760694176">
+                        <img class="mobile-only" loading="lazy"
+                            src="//trysculptique.com/cdn/shop/files/Frame_1000003583_1.png?v=1760694176">
+                    </div>
+                    <!-- END WHY NOT BLOATING IMAGE -->
+
+                    <!-- TRY BUTTON -->
+                    <div class="mt-[24px] text-center">
+                        <a href="https://pay.trysculptique.com/lymphatic/checkout"
+                            class="product_primary-btn font-[Nunito] inline-block py-[18px] px-[80px] cursor-pointer no-underline text-white bg-black rounded-[4px] text-[18px] transition-all duration-[200ms] leading-[1.3em] text-center">Try
+                            Lymphatic Drainage Risk-Free</a>
+
+                        <p
+                            class="product_primary-btn-footer flex items-center justify-center gap-[16px] text-[16px] leading-[1.3em] mt-[16px]">
+                            <span>
+                                <img class="w-[24px]!"
+                                    src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/60-days_11622780_1_1.png?v=1752388395">
+                            </span>
+                            <span>
+                                60 day money-back guarantee
+                            </span>
+                        </p>
+
+                    </div>
+                    <!-- END TRY BUTTON -->
+                </div>
+            </div>
+        </div>
+        <!-- END WHY NOTHING HAS WORKED -->
+
+        <!-- THE 8-INGREDIENT SYSTEM -->
+        <div class="content-section">
+            <div class="ingredient-outer bg-[#f3eee0] py-[56px] ">
+                <div class="page-width">
+                    <!-- TITLE -->
+                    <div class="ingredient-title-container max-w-[800px] m-auto">
+                        <h2
+                            class="product-section_title text-center  text-[32px] leading-[1.3em] my-[16px]     font-[400] font-[Lora]! [&>span]:text-[#039869]">
+                            <span>The 8-Ingredient System</span> That Restores
+                            What Hormones Once Maintained
+                        </h2>
+
+                        <p class="product-section_text text-center text-[18px] my-[16px] leading-[1.3em] ">Sculptique is
+                            the only formula that addresses ALL 6
+                            mechanisms of lymphatic dysfunction simultaneously—not with symbolic doses, but with
+                            therapeutic amounts based on clinical research.<br>Not just moving fluid temporarily. Not
+                            just reducing inflammation. <strong>Complete restoration.</strong></p>
+                    </div>
+                    <!-- END TITLE -->
+
+                    <!-- INGREDIENT TABLE -->
+                    <div
+                        class="ingredient-table-container mt-[40px] grid grid-cols-4 bg-white rounded-[12px] border-black border-[0.5px] overflow-hidden">
+
+                    </div>
+                    <!-- END INGREDIENT TABLE -->
+
+                    <!-- THE SYNERGISTIC EFFECT -->
+                    <div class="synergistic-img max-w-[580px] mt-[40px] m-auto [&>img]:w-full">
+                        <img class="desktop-only" loading="lazy"
+                            src="//trysculptique.com/cdn/shop/files/Frame_1000003583_2.png?v=1760697982">
+                        <img class="mobile-only" loading="lazy"
+                            src="//trysculptique.com/cdn/shop/files/Frame_1000003583_3.png?v=1760697982">
+                    </div>
+                    <!-- END THE SYNERGISTIC EFFECT -->
+                </div>
+            </div>
+        </div>
+        <!-- END THE 8-INGREDIENT SYSTEM -->
+
 
     </main>
     <!-- END CONTENTS -->
