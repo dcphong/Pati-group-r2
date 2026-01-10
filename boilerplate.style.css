@@ -1,0 +1,236 @@
+:root {
+  --color-forground: 0, 0, 0;
+  --font-heading-family: Trirong, serif;
+  --font-heading-style: normal;
+  --font-heading-weight: 400;
+  --font-heading-scale: 1;
+  --font-body-family: Montserrat, sans-serif;
+  --font-body-weight: 400;
+  --font-body-scale: 1;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: calc(var(--font-body-scale) * 62.5%);
+  height: 100%;
+}
+
+/* div { display: block;
+        unicode-bidi: isolate;
+    } */
+
+h4,
+.h4 {
+  font-family: var(--font-heading-family);
+  font-style: var(--font-heading-style);
+  font-size: calc(var(--font-heading-scale) * 1.5rem);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h0,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  font-family: var(--font-heading-family);
+  font-style: var(--font-heading-style);
+  font-weight: var(--font-heading-weight);
+  letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
+  color: rgb(var(--color-foreground));
+  line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
+  word-break: break-word;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
+li {
+  display: list-item;
+  unicode-bidi: isolate;
+}
+
+::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: auto !important;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: var(--font-body-family);
+  font-weight: var(--font-body-weight);
+  letter-spacing: 0.06rem;
+  line-height: calc(1 + 0.8 / var(--font-body-scale));
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.content-section p {
+  font-family: Nunito;
+}
+
+.main-section img {
+  width: 100%;
+}
+
+.page-width {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.image-box img {
+  object-fit: cover;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.product-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.products-images img {
+  object-fit: cover;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.slick-slide {
+  display: block;
+}
+
+.product-title {
+  font-size: 28px;
+  margin: 16px 0;
+  line-height: 1.4em;
+  font-family: Lora;
+  font-weight: 400;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.feature-item > div:nth-child(1) {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.feature-item > div:nth-child(2) {
+  width: 100%;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.product-selector-block.active .perk-item {
+  opacity: 1 !important;
+}
+
+.product-selector-block.active .product-selector-circle-inner {
+  display: block !important;
+}
+
+.slide-block.active {
+  border: 1px solid #039869 !important;
+}
+
+.slide-block.active .thumb-icon {
+  rotate: 40deg;
+}
+
+.arrow-img {
+  display: block;
+  width: 100%;
+  max-width: 48px;
+  margin: 24px auto;
+}
+
+.flex-reversed {
+  flex-direction: row-reverse !important;
+}
+
+.faq-block-item.active svg {
+  transform: rotate(180deg);
+}
+
+.jdgm-rev-widg__summary .jdgm-star {
+  font-size: 16px;
+}
+.jdgm-rev-widg .jdgm-star,
+.jdgm-revs-tab .jdgm-star,
+.jdgm-all-reviews .jdgm-star,
+.jdgm-gallery-popup .jdgm-star {
+  color: #108474;
+  color: var(--jdgm-star-color);
+}
+.jdgm-star {
+  color: #fa8a8a;
+}
+.jdgm-star {
+  font-family: "JudgemeStar" !important;
+}
+.jdgm-star.jdgm--on:before {
+  content: "\e000";
+}
+
+.stories-carousel-container .slick-dots {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 80%;
+  display: flex !important;
+  gap: 0px;
+}
+
+.stories-carousel-container .slick-dots li {
+  flex: 1;
+  margin: 0;
+}
+
+.stories-carousel-container .slick-dots li button {
+  width: 100%;
+  height: 4px;
+  padding: 0;
+  background: #c8c8c8;
+  border-radius: 999px;
+}
+
+.stories-carousel-container .slick-dots li.slick-active button {
+  background: #039869;
+}
+
+.stories-carousel-container .slick-dots li button:before {
+  display: none;
+}

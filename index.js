@@ -302,6 +302,110 @@ const ingredientTableData = [
   },
 ];
 
+const frequentlyQuestionData = [
+  {
+    question: "How is this different from lymphatic drops I saw on TikTok?",
+    answers: [
+      "Lymphatic drops have poor bioavailability—liquid ingredients pass through your digestive system too quickly to be properly absorbed. Most contain only milligrams of herbs (symbolic amounts, not therapeutic doses) and act as basic diuretics that pull water from your bloodstream, not from tissue swelling.",
+      "Sculptique uses capsules with therapeutic doses (100-500mg per ingredient) that are properly absorbed and work at the cellular level to restore vessel function, break down protein clogs, and strengthen vessel walls—not just make you urinate more.",
+    ],
+  },
+  {
+    question: "Why didn't my diet changes work?",
+    answers: [
+      "Your diet only addressed what goes INTO your system (inflammation from food). It didn't fix your body's broken ability to drain what's already there. That's why you could eat perfectly clean and still wake up bloated—the backed-up lymphatic waste was still pooling in your tissues.",
+    ],
+  },
+  {
+    question: "How long until I see results?",
+    answers: [
+      "Most women notice something within the first week—feeling lighter, less bloated, morning puffiness fading faster. Visible changes happen by weeks 2-3. Transformation becomes undeniable by weeks 4-6. But true restoration takes time—we recommend 90 days for complete results.",
+    ],
+  },
+  {
+    question: "Is this safe? Any side effects?",
+    answers: [
+      "Sculptique contains 100% natural botanical ingredients used safely for centuries. The most common experience is increased urination in the first few days (expected—you're flushing excess fluid). Serious side effects are extremely rare. However, if you have pre-existing conditions or take prescription medications, consult your healthcare provider first.",
+    ],
+  },
+  {
+    question: "Can I take this with other supplements?",
+    answers: [
+      "Yes. Sculptique works synergistically with most supplements. However, if you're taking blood thinners, diuretics, thyroid medication, or immune-suppressing drugs, check with your healthcare provider first.",
+    ],
+  },
+  {
+    question: "How do I use it?",
+    answers: [
+      "Take 2 capsules daily with water. Any time of day (though mornings are ideal). With or without food. Just be consistent.",
+    ],
+  },
+  {
+    question: "What if it doesn't work for me?",
+    answers: [
+      "You have 60 full days to try it. If you don't feel lighter, less bloated, more energized—send it back. Even if you've taken every capsule. We'll refund your purchase immediately. You only keep Sculptique if it works for YOU.",
+    ],
+  },
+  {
+    question: "Where is this manufactured?",
+    answers: [
+      "Sculptique is manufactured in the USA at an FDA-registered, GMP-certified facility. We use Infrared Spectroscopy testing, heavy metal testing, and third-party quality control. Every batch is tested to ensure therapeutic doses with no contaminants.",
+    ],
+  },
+  {
+    question: "Why isn't this in stores?",
+    answers: [
+      "Two reasons: Quality control (we oversee the entire process from sourcing to testing) and price (retail markup would make it cost at least double). By selling direct, we maintain the highest quality while keeping the price affordable.",
+    ],
+  },
+  {
+    question: "Is this vegan/gluten-free?",
+    answers: [
+      "Yes. 100% vegan, gluten-free, sugar-free, no artificial ingredients",
+    ],
+  },
+];
+
+const star = `
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path fill="currentColor"
+                                                    d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                            </svg>
+`;
+const halfStar = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m19.65 9.04l-4.84-.42l-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73l3.67-3.18c.67-.58.32-1.68-.56-1.75M12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>`;
+const starOutline = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M16.855 20.966c-.224 0-.443-.05-.646-.146l-.104-.051l-4.107-2.343l-4.107 2.344l-.106.053a1.52 1.52 0 0 1-1.521-.143a1.5 1.5 0 0 1-.586-1.509l.957-4.642l-1.602-1.457l-1.895-1.725l-.078-.082a1.5 1.5 0 0 1-.34-1.492c.173-.524.62-.912 1.16-1.009l.102-.018l4.701-.521l1.946-4.31l.06-.11a1.5 1.5 0 0 1 1.309-.771c.543 0 1.044.298 1.309.77l.06.112l1.948 4.312l4.701.521l.104.017c.539.1.986.486 1.158 1.012c.17.521.035 1.098-.34 1.494l-.078.078l-3.498 3.184l.957 4.632a1.51 1.51 0 0 1-.59 1.519a1.5 1.5 0 0 1-.874.281m-8.149-6.564c-.039.182-.466 2.246-.845 4.082l3.643-2.077a1 1 0 0 1 .99 0l3.643 2.075l-.849-4.104a1 1 0 0 1 .308-.942l3.1-2.822l-4.168-.461a1 1 0 0 1-.801-.584l-1.728-3.821l-1.726 3.821c-.146.322-.45.543-.801.584l-4.168.461l3.1 2.822a1 1 0 0 1 .302.966"/></svg>`;
+const reviewsHistogramData = [
+  {
+    star: 5,
+    rate: 84,
+  },
+  {
+    star: 4,
+    rate: 17,
+  },
+  {
+    star: 3,
+    rate: 8,
+  },
+  {
+    star: 2,
+    rate: 1,
+  },
+  {
+    star: 1,
+    rate: 0,
+  },
+];
+
+const videos = [
+  "//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_12.40.11.png?v=1752486039",
+  "//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_16.12.02.png?v=1752498744",
+  "//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.43.04.png?v=1752497038",
+  "//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.43.34.png?v=1752497063",
+  "//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_16.11.50.png?v=1752498777",
+];
+
 const xIcon =
   "https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Vector_6.png?v=1760696853";
 
@@ -322,6 +426,9 @@ $(document).ready(function () {
   const bloatingGridCardsContainer = $(".bloating-grid-cards-container");
   const whyNothingBloatingGridContainer = $(".why-not-grid-container");
   const ingredientTableContainer = $(".ingredient-table-container");
+  const frequentlySlideContainer = $(".frequently-faq-container");
+  const starsRenderContainer = $(".stars-render");
+  const reviewsHistogramContainer = $(".reviews-histogram");
 
   productsImages.forEach((image) => {
     const carouselItem = $(`
@@ -659,4 +766,115 @@ $(document).ready(function () {
       ingredientContent.slideToggle(350);
     });
   });
+
+  frequentlyQuestionData.forEach((faq) => {
+    const faqBlockItem = `
+      <div class="py-[20px] px-[24px] cursor-pointer border-b border-white faq-block-item">
+        <!-- THUMB --> 
+        <div class="flex items-center justify-between gap-[12px]">
+          <div>
+            <p class="m-0 text-[18px] leading-[1.3em]">${faq.question}</p>
+          </div>
+          <div class="[&_svg]:w-[16px] [&_svg]:transition-all [&_svg]:duration-[200ms]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg>
+          </div>
+        </div>
+        <!-- END THUMB --> 
+
+        <!-- ANSWERS -->
+        <div class="pt-[16px] hidden faq-answers-container">
+          ${faq.answers
+            .map(
+              (answer) => `
+            <p class="m-0 text-[16px] leading-[1.3em]">${answer}</p>`
+            )
+            .join("")}
+        </div>
+        <!-- END ANSWERS -->
+      </div>
+    `;
+
+    frequentlySlideContainer.append(faqBlockItem);
+  });
+
+  const faqBlockItems = $(".faq-block-item");
+
+  faqBlockItems.each((_, element) => {
+    $(element).on("click", (e) => {
+      e.currentTarget.classList.toggle("active");
+
+      const faqAnswers = $(element).find(".faq-answers-container");
+      faqAnswers.slideToggle(350);
+    });
+  });
+
+  Array.from({ length: 5 }).forEach((_, index) => {
+    if (index < 4) starsRenderContainer.append(star);
+    else starsRenderContainer.append(halfStar);
+  });
+
+  reviewsHistogramData.forEach((review) => {
+    const reviewRow = `
+    <div class="h-[14px]  cursor-pointer mb-[10px]! inline-flex flex">
+      <!-- STARS -->
+      <div class="leading-[14px] align-middle inline-flex w-full items-center flex text-[#FA8A8A] text-[16px] [&>span_*]:size-[19px]">
+        ${Array.from({ length: 5 })
+          .map((_, index) => {
+            if (index < review.star) return `<span>${star}</span>`;
+            else return `<span>${starOutline}</span>`;
+          })
+          .join("")}
+      </div>
+      <!-- END STARS -->
+
+      <!-- RATE BAR --> 
+      <div class="mx-[24px]! min-w-[140px] bg-[#e0e0e080] h-[100%]">
+          <div class="h-[100%] after:absolute after:top-0 after:left-0 after:w-full after:content-[''] after:bg-none bg-[#FA8A8A]" style="width: ${
+            review.rate
+          }%">
+          </div>
+      </div>
+      <!-- END RATE BAR --> 
+
+      <!-- RATE TEXT -->
+      <div class="min-w-[24px]! text-start m-0 text-[#7b7b7b]">${
+        review.rate
+      }</div>
+      <!-- END RATE TEXT -->
+    </div> 
+    `;
+
+    reviewsHistogramContainer.append(reviewRow);
+  });
+
+  const formRatingContainer = $(".form-rating");
+
+  Array.from({ length: 5 }).forEach((_, index) => {
+    formRatingContainer.append(`<span class="form-star">${starOutline}</span>`);
+  });
+
+  const storiesContainer = $(".stories-carousel-container");
+
+  videos.forEach((video) => {
+    const videoItem = $(`
+        <div>
+          <div style="width: 100%; display: inline-block" >
+            <div class="relative rounded-[4px] overflow-hidden cursor-pointer">
+              <img class="absolute size-[32px] left-[calc(50%-16px)] top-[calc(50%-16px)]" src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/mingcute_play-fill.png?v=1752485519" class="product_ugc-play">
+              <video playsinline="" poster="${video}" class="object-cover w-full aspect-[9/16] rounded-[4px] h-full overflow-hidden">
+                                <source src="https://cdn.shopify.com/videos/c/o/v/a7bce8da322747e08ef1ce7c87317c30.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      `);
+
+    storiesContainer.append(videoItem);
+  });
 });
+
+const popupModal = $(".popup-section");
+
+const toggleModal = () => {
+  popupModal.toggleClass("hidden");
+};
